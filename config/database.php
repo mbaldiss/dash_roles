@@ -52,6 +52,14 @@ return [
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
+
+            // si da error el migrate despues de instalar los permisos de laravel
+            //con figurar esta seccion asi:
+            /* 
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'engine' => 'innodb',
+            */
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
